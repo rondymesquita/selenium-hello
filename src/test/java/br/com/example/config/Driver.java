@@ -19,17 +19,15 @@ public class Driver {
 	}
 
 	public static WebDriver getInstance() {
-		if (webDriver == null) {
 
-			Logger.logInfo(String.format("Selected driver: %s", System.getProperty("driver")));
-			
-			String driver = System.getProperty("driver") != null ? System.getProperty("driver") : FIREFOX;
+		Logger.logInfo(String.format("Selected driver: %s", System.getProperty("driver")));
 
-			webDriver = getWebDriverByDriverName(driver);
+		String driver = System.getProperty("driver") != null ? System.getProperty("driver") : FIREFOX;
 
-			Logger.logInfo(String.format("Running with %s driver", driver));
+		webDriver = getWebDriverByDriverName(driver);
 
-		}
+		Logger.logInfo(String.format("Running with %s driver", driver));
+
 		return webDriver;
 	}
 

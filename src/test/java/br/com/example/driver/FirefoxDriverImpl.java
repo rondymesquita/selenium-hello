@@ -19,7 +19,6 @@ public class FirefoxDriverImpl implements AbstractDriver{
 
 	public void quitDriver() {
 		if(driver != null){
-			driver.close();
 			driver.quit();
 		}
 	}

@@ -36,7 +36,6 @@ public class SelendroidDriverImpl implements AbstractDriver{
 
 	public void quitDriver() {
 		if(selendroidDriver != null){
-			selendroidDriver.close();
 			selendroidDriver.quit();
 		}
 		if (selendroidServer != null) {

@@ -31,7 +31,6 @@ public class AppiumDriverImpl implements AbstractDriver{
 
 	public void quitDriver() {
 		if(driver != null){
-			driver.close();
 			driver.quit();
 		}
 		
