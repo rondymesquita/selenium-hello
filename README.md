@@ -1,7 +1,7 @@
 # Selenium Example
 Selenium Example with multiples drives running in same interface.
 
-##Requirements
+## Requirements
 - Maven3+
 - Appium
 - Selendroid
@@ -15,13 +15,13 @@ Selenium Example with multiples drives running in same interface.
 mvn eclipse:eclipse
 ```
 
-###Running
-####On Firefox
+### Running
+#### On Firefox
 ```bash
 mvn test -Pfirefox
 ```
 
-####Another Envs
+#### Another Envs
 ```bash
 -Pappium
 -Pselendroid
